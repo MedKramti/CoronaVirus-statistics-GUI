@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="950.0" style="-fx-background-color: #fff;" stylesheets="@app.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coronavirus.stats.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <VBox alignment="TOP_CENTER" prefHeight="569.0" prefWidth="212.0" style="-fx-background-color: #355E92;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="119.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/coronavirus.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton fx:id="africa" alignment="BASELINE_LEFT" onAction="#africaBtnClicked" prefHeight="47.0" prefWidth="184.0" styleClass="sidebarBtn" text="    Africa" textAlignment="JUSTIFY" textFill="#cdc7c7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/africa.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="europe" alignment="BASELINE_LEFT" onAction="#europeBtnClicked" prefHeight="47.0" prefWidth="184.0" styleClass="sidebarBtn" text="    Europe" textAlignment="JUSTIFY" textFill="#cdc7c7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/europe.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="america" alignment="BASELINE_LEFT" onAction="#americaBtnClicked" prefHeight="47.0" prefWidth="184.0" styleClass="sidebarBtn" text="    America" textAlignment="JUSTIFY" textFill="#cdc7c7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/usa-today.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton fx:id="Asia" alignment="BASELINE_LEFT" onAction="#asiaBtnClicked" prefHeight="47.0" prefWidth="184.0" styleClass="sidebarBtn" text="    Asia" textAlignment="JUSTIFY" textFill="#cdc7c7">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/countriesIcons/chinese.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Separator opacity="0.5" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Separator>
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="186.0" text="Developed by" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="38.0" prefWidth="163.0" text="Github.com/MedKramti" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="contentPane" layoutX="212.0" prefHeight="569.0" prefWidth="737.0" style="-fx-background-color: #fff;">
+         <children>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="27.0" prefHeight="209.0" prefWidth="721.0">
+               <children>
+                  <Label fx:id="confirmedLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="300.0" prefWidth="300.0" text="Label" textAlignment="CENTER" textFill="#757272">
+                     <graphic>
+                        <ImageView fitHeight="99.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Candara Light" size="31.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="deathLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="300.0" prefWidth="300.0" text="Label" textAlignment="CENTER" textFill="#fc0808">
+                     <font>
+                        <Font name="Candara Light" size="31.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="99.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/death.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="8.0" layoutY="272.0" prefHeight="226.0" prefWidth="721.0">
+               <children>
+                  <Label fx:id="recoveredLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="300.0" prefWidth="300.0" text="Label" textAlignment="CENTER" textFill="#04cd59f0">
+                     <font>
+                        <Font name="Candara Light" size="31.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="128.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/recovered.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="activeLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="300.0" prefWidth="300.0" text="Label" textAlignment="CENTER" textFill="#355e92">
+                     <font>
+                        <Font name="Candara Light" size="31.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="99.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/patient.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children></Pane>
+    </children>
+</AnchorPane>

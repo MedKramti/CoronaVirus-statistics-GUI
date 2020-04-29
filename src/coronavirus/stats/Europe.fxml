@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="680.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coronavirus.stats.EuropeController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" prefHeight="570.0" prefWidth="680.0">
+         <children>
+            <Pane fx:id="contentPane" layoutX="-10.0" prefHeight="549.0" prefWidth="680.0">
+               <children>
+                  <VBox layoutX="-1.0" prefHeight="582.0" prefWidth="700.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="100.0" />
+                           </VBox.margin>
+                           <children>
+                              <Button fx:id="france" contentDisplay="TOP" mnemonicParsing="false" onAction="#showStats" style="-fx-background-color: #fff;" text="France">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/countriesIcons/france.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="italy" contentDisplay="TOP" mnemonicParsing="false" onAction="#showStats" style="-fx-background-color: #fff;" text="Italy">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/countriesIcons/italy.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="spain" contentDisplay="TOP" mnemonicParsing="false" onAction="#showStats" style="-fx-background-color: #fff;" text="Spain">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/countriesIcons/spain.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="russia" contentDisplay="TOP" mnemonicParsing="false" onAction="#showStats" style="-fx-background-color: #fff;" text="Russia">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/countriesIcons/russia.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="united_kingdom" contentDisplay="TOP" mnemonicParsing="false" onAction="#showStats" style="-fx-background-color: #fff;" text="United Kingdom">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/countriesIcons/uk.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets right="100.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="turkey" contentDisplay="TOP" mnemonicParsing="false" onAction="#showStats" style="-fx-background-color: #fff;" text="Turkey">
+                                 <graphic>
+                                    <ImageView fitHeight="75.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/countriesIcons/turkey.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coronavirus.stats.StatsController">
+   <children>
+      <ScrollPane prefHeight="569.0" prefWidth="738.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="721.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="COVID-19 IN ">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label id="label" fx:id="label" layoutX="147.0" layoutY="14.0" text="Label">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="4.0" layoutY="63.0" prefHeight="147.0" prefWidth="713.0">
+                     <children>
+                        <VBox prefHeight="113.0" prefWidth="176.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="180.0" text="Total Cases">
+                                 <font>
+                                    <Font name="Candara" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="totalCases" alignment="CENTER" prefHeight="45.0" prefWidth="180.0" text="Label">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="113.0" prefWidth="176.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="180.0" text="Total Death" textFill="RED">
+                                 <font>
+                                    <Font name="Candara" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="totalDeath" alignment="CENTER" prefHeight="45.0" prefWidth="180.0" text="Label">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="113.0" prefWidth="215.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="221.0" text="Total Recovered" textFill="#04cd59">
+                                 <font>
+                                    <Font name="Candara" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="totalRecovered" alignment="CENTER" prefHeight="45.0" prefWidth="180.0" text="Label">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="113.0" prefWidth="176.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="43.0" prefWidth="180.0" text="Total Active" textFill="#355e92">
+                                 <font>
+                                    <Font name="Candara" size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="totalActive" alignment="CENTER" prefHeight="45.0" prefWidth="180.0" text="Label">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <BarChart fx:id="infectionHistoryDiagram" layoutX="-8.0" layoutY="549.0" prefHeight="388.0" prefWidth="690.0" title="Infection history">
+                    <xAxis>
+                      <CategoryAxis label="Date" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="Infected" prefHeight="280.0" prefWidth="41.0" side="TOP" />
+                    </yAxis>
+                  </BarChart>
+                  <BarChart fx:id="recoveredHistoryDiagram" layoutX="-8.0" layoutY="161.0" prefHeight="388.0" prefWidth="690.0" title="Recovered history">
+                     <xAxis>
+                        <CategoryAxis label="Date" side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis label="Recovered" prefHeight="280.0" prefWidth="41.0" side="TOP" />
+                     </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
