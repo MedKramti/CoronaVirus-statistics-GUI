@@ -1,5 +1,5 @@
 # CoronaVirus-statistics-GUI
-  Automated JavaFX application to scrape the lastest coronavirus stats and turn it into charts 
+  Automated JavaFX application to scrape the latest coronavirus stats and turn it into charts 
 
 ## Technology Used
 - JavaFX
